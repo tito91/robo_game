@@ -1,7 +1,3 @@
-import pygame
-import sys
-import tiledtmxloader
-from pygame.locals import *
 from Dynamic import *
 from Static import *
 from Domain import *
@@ -11,10 +7,6 @@ try:
     import _path
 except:
     print("_path import failed")
-
-#comment
-
-import utils
 
 fpsClock = pygame.time.Clock()
 
@@ -95,7 +87,9 @@ while running:
                 domain.if_scale_up = False
             if event.key == K_z:
                 domain.if_scale_down = False
-                
+
+    domain.check_for_collisions(worldMap.sprite_layers[1])
+
     worldMap.cam_world_pos_x += 1
 
     # adjust camera to position according to the keypresses

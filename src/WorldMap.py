@@ -2,6 +2,7 @@ import pygame, sys, tiledtmxloader
 from utils import *
 import math
 
+
 class WorldMap:
     def __init__(self, filename):
         args = sys.argv[1:]
@@ -47,4 +48,3 @@ class WorldMap:
         
     def set_camera_pos_size(self):
         self.renderer.set_camera_position(self.cam_world_pos_x, self.cam_world_pos_y, "topleft")
-        

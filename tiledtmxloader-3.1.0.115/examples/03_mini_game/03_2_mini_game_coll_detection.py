@@ -18,7 +18,6 @@ import math
 
 import pygame
 
-
 try:
     import _path
 except:

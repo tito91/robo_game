@@ -1,6 +1,5 @@
-import pygame
-import math
-from utils import *
+import utils
+
 
 class Domain:
     def __init__(self, radius, pos):
@@ -18,49 +17,57 @@ class Domain:
         self.if_scale_down = False
         self.radius_min = 50
         self.radius_max = 200
-    
-    def draw(self, screen, dt, color=pygame.Color(58, 116, 134)):
-        pygame.draw.circle(screen, color, (int(self.pos[0]), int(self.pos[1])), self.radius, 2)
+
+    def draw(self, screen, dt, color=utils.pygame.Color(58, 116, 134)):
+        utils.pygame.draw.circle(screen, color, (int(self.pos[0]), int(self.pos[1])), self.radius, 2)
         for f in self.fish_list:
             f.draw(screen, dt)
-        
-    def is_in_bounds(self, coords=0, fish=0):
+
+    def is_in_bounds(self, coords=[], fish=[]):
         if coords:
-            k = math.sqrt((coords[0]-self.pos[0])**2 + (coords[1]-self.pos[1])**2)
+            k = utils.math.sqrt((coords[0] - self.pos[0]) ** 2 + (coords[1] - self.pos[1]) ** 2)
         elif fish:
-            k = math.sqrt((fish.cx-self.pos[0])**2 + (fish.cy-self.pos[1])**2)
+            k = utils.math.sqrt((fish.cx - self.pos[0]) ** 2 + (fish.cy - self.pos[1]) ** 2)
         elif fish and coords:
             print("Only one parameter needed")
             return
-        if k<=self.radius:
+        if k <= self.radius:
             return True
         else:
             return False
-            
+
     def add_fish(self, *fishes):
         for f in fishes:
             self.fish_list.append(f)
-        
+
     def update(self):
-        inc_x, inc_y = self.vel[0]*self.v_scal, self.vel[1]*self.v_scal
-        
-        if (self.pos[0]+inc_x-self.radius)>=0 and (self.pos[0]+inc_x+self.radius)<=SCRWIDTH:
+        inc_x, inc_y = self.vel[0] * self.v_scal, self.vel[1] * self.v_scal
+
+        if (self.pos[0] + inc_x - self.radius) >= 0 and (self.pos[0] + inc_x + self.radius) <= utils.SCRWIDTH:
             self.pos[0] = self.pos[0] + inc_x
-        if (self.pos[1]+inc_y-self.radius)>=0 and (self.pos[1]+inc_y+self.radius)<=SCRHEIGHT:
+        if (self.pos[1] + inc_y - self.radius) >= 0 and (self.pos[1] + inc_y + self.radius) <= utils.SCRHEIGHT:
             self.pos[1] = self.pos[1] + inc_y
-        
-        if self.if_scale_down and (self.radius-self.scal_step)>=self.radius_min:
+
+        if self.if_scale_down and (self.radius - self.scal_step) >= self.radius_min:
             self.radius -= self.scal_step
-                
-        if (self.if_scale_up and (self.radius+self.scal_step)<=self.radius_max and
-            (self.pos[0]-self.radius-self.scal_step)>=0 and (self.pos[0]+self.radius+self.scal_step)<=SCRWIDTH and
-            (self.pos[1]-self.radius-self.scal_step)>=0 and (self.pos[1]+self.radius+self.scal_step)<=SCRHEIGHT):
+
+        if (self.if_scale_up and (self.radius + self.scal_step) <= self.radius_max and
+                    (self.pos[0] - self.radius - self.scal_step) >= 0 and (
+                        self.pos[0] + self.radius + self.scal_step) <= utils.SCRWIDTH and
+                    (self.pos[1] - self.radius - self.scal_step) >= 0 and (
+                        self.pos[1] + self.radius + self.scal_step) <= utils.SCRHEIGHT):
             self.radius += self.scal_step
-            
+
         for f in self.fish_list:
             f.update()
-        
+
         for f in self.fish_list:
             if not self.is_in_bounds(fish=f):
                 f.new_dir((f.cx, f.cy), self.pos, 40)
-            
+
+    def check_for_collisions(self, coll_layer):
+        for fish in self.fish_list:
+            tile_x = int(fish.cx // coll_layer.tilewidth)
+            tile_y = int(fish.cy // coll_layer.tileheight)
+            if coll_layer.content2D[tile_y][tile_x] is not None:
+                print("collision occured")
