@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7623491e-caad-4a42-84c9-915f683237e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiledtmxloader-3.1.0.115/examples/03_mini_game/03_2_mini_game_coll_detection.py" afterPath="$PROJECT_DIR$/tiledtmxloader-3.1.0.115/examples/03_mini_game/03_2_mini_game_coll_detection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Domain.py" afterPath="$PROJECT_DIR$/src/Domain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WorldMap.py" afterPath="$PROJECT_DIR$/src/WorldMap.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dynamic.py" afterPath="$PROJECT_DIR$/src/Dynamic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Static.py" afterPath="$PROJECT_DIR$/src/Static.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,7 +35,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="59" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="1972">
+            <state line="41" column="57" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2023">
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -46,8 +46,10 @@
       <file leaf-file-name="Domain.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Domain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="19" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.10810811" vertical-offset="697" max-vertical-offset="1326">
-              <folding />
+            <state line="76" column="42" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.8108108" vertical-offset="782" max-vertical-offset="1411">
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +57,7 @@
       <file leaf-file-name="WorldMap.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WorldMap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="70" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="935">
+            <state line="27" column="43" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -66,9 +68,31 @@
       <file leaf-file-name="Dynamic.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Dynamic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+            <state line="52" column="30" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="799">
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Static.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Static.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,6 +122,8 @@
       <list>
         <option value="$PROJECT_DIR$/tiledtmxloader-3.1.0.115/examples/03_mini_game/03_2_mini_game_coll_detection.py" />
         <option value="$PROJECT_DIR$/src/WorldMap.py" />
+        <option value="$PROJECT_DIR$/src/Static.py" />
+        <option value="$PROJECT_DIR$/src/Dynamic.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/Domain.py" />
       </list>
@@ -106,7 +132,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1932" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -519,7 +545,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -527,7 +553,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18110648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18072917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -562,36 +588,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/src/Domain.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="5" />
+          <line>70</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Dynamic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tiledtmxloader/helperspygame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="783" column="4" selection-start="27727" selection-end="27727" vertical-scroll-proportion="0.33227345" vertical-offset="13034" max-vertical-offset="19244">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WorldMap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="70" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="935">
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,9 +610,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Static.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dynamic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="30" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1547">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WorldMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="43" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="59" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0" vertical-offset="1168" max-vertical-offset="1972">
+        <state line="41" column="57" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2023">
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -613,8 +657,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="19" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.10810811" vertical-offset="697" max-vertical-offset="1326">
-          <folding />
+        <state line="76" column="42" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.8108108" vertical-offset="782" max-vertical-offset="1411">
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

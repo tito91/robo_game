@@ -1,5 +1,6 @@
 from Static import *
 import math
+import pygame
 from random import randint
 from utils import *
 
@@ -28,7 +29,9 @@ class Dynamic (Static) :
         rect = self.view_surface.get_rect()
         rect.topleft = viewx, viewy
         surf.blit(self.view_surface, rect)
-        
+
+        pygame.draw.circle(surf, redColor, (int(self.cx), int(self.cy)), 3, 0)
+
     def update(self, t=1):
         inc_x, inc_y = self.vx*self.v_scal, self.vy*self.v_scal
     

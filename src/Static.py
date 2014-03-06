@@ -9,7 +9,7 @@ class Static:
         #image
         self.surfaceObj = pygame.image.load(imagepath)
         #center point
-        self.cx, self.cy = fx+(self.surfaceObj.get_width())/2, fy+(self.surfaceObj.get_height())/2
+        self.cx, self.cy = fx+int((self.surfaceObj.get_width())/2), fy+int((self.surfaceObj.get_height())/2)
 
     def draw(self, surf):
         rect = self.surfaceObj.get_rect()

@@ -36,8 +36,10 @@ for i in range(5):
     #dyna.point_to_vel_vector()
     dyna.v_scal = randint(10, 15)
     domain.add_fish(dyna)
-    
+
 worldMap = WorldMap("map2_tiles_only.tmx")
+
+domain.rel_offset_y = abs(worldMap.world_map.pixel_height - SCRHEIGHT)
 
 running = True
 
@@ -91,6 +93,7 @@ while running:
     domain.check_for_collisions(worldMap.sprite_layers[1])
 
     worldMap.cam_world_pos_x += 1
+    domain.rel_offset_x +=1
 
     # adjust camera to position according to the keypresses
     worldMap.set_camera_pos_size()
