@@ -12,6 +12,8 @@ try:
 except:
     print("_path import failed")
 
+#comment
+
 import utils
 
 fpsClock = pygame.time.Clock()
