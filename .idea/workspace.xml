@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7623491e-caad-4a42-84c9-915f683237e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Domain.py" afterPath="$PROJECT_DIR$/src/Domain.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dynamic.py" afterPath="$PROJECT_DIR$/src/Dynamic.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Static.py" afterPath="$PROJECT_DIR$/src/Static.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="robo_game.iws" />
@@ -46,7 +43,7 @@
       <file leaf-file-name="Domain.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Domain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="42" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.8108108" vertical-offset="782" max-vertical-offset="1411">
+            <state line="38" column="24" selection-start="1267" selection-end="1267" vertical-scroll-proportion="-0.21621622" vertical-offset="782" max-vertical-offset="1411">
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -282,6 +279,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -541,12 +539,16 @@
       <created>1394109507726</created>
       <updated>1394109507726</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fourth&#10;&#10;Fourth">
+      <created>1394126834236</created>
+      <updated>1394126834236</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -557,7 +559,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3097998" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3097998" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -657,7 +659,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Domain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="42" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.8108108" vertical-offset="782" max-vertical-offset="1411">
+        <state line="38" column="24" selection-start="1267" selection-end="1267" vertical-scroll-proportion="-0.21621622" vertical-offset="782" max-vertical-offset="1411">
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

@@ -75,4 +75,3 @@ class Domain:
             #print(fish.cx + self.rel_offset_x, fish.cy + self.rel_offset_y)
             if coll_layer.content2D[tile_y][tile_x] is not None:
                 print("collision occured")
-                pass
