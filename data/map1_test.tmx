@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="4" tilewidth="128" tileheight="128" backgroundcolor="#000000">
+ <tileset firstgid="1" name="Panorama" tilewidth="128" tileheight="128">
+  <image source="../tilesets/Panorama.png" width="1024" height="512"/>
+ </tileset>
+ <tileset firstgid="33" name="256" tilewidth="256" tileheight="256">
+  <image source="../tilesets/256.png" width="768" height="768"/>
+ </tileset>
+ <layer name="Tile Layer 2" width="15" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMANZPDIEQLSFOiVokAvIQAAMYAAUg==
+  </data>
+ </layer>
+ <layer name="Tile Layer 1" width="15" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYwArEbGTS/EAsQCYNADtoATs=
+  </data>
+ </layer>
+</map>
